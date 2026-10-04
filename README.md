@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Security-Posture-Management-CSPM/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Security-Posture-Management-CSPM?style=flat-square&color=gold" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Security-Posture-Management-CSPM/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Security-Posture-Management-CSPM?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Security-Posture-Management-CSPM/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Security-Posture-Management-CSPM?style=flat-square&color=blue" alt="GitHub forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Security-Posture-Management-CSPM/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -54,9 +54,9 @@ This repository tracks top-tier **SaaS platforms** and **open-source projects** 
 
 ## 🔓 Open-Source GitHub Projects
 
-Sorted by star count (descending). Star badge links directly to each repository's stargazers page.
+Sorted by Stars_Count (descending). Stars_Badge links directly to each repository's stargazers page.
 
-| Repo | Description | Stars |
+| Repo | Description | GitHub_Stars |
 |------|-------------|-------|
 | **[Trivy](https://github.com/aquasecurity/trivy)** | **Comprehensive multi-scanner for cloud & containers.** Vulnerabilities, misconfigurations (IaC), secrets, and SBOM scanner for containers, Kubernetes, AWS, and repositories. Apache-2.0. | [![Stars](https://img.shields.io/github/stars/aquasecurity/trivy?style=social&color=white)](https://github.com/aquasecurity/trivy/stargazers) |
 | **[Prowler](https://github.com/prowler-cloud/prowler)** | **Most widely used open-source CSPM.** Multi-cloud auditing for AWS, Azure, GCP, Kubernetes, M365, GitHub, Okta with **800+ checks** mapped to CIS, NIST, PCI DSS, HIPAA, GDPR. Apache-2.0. | [![Stars](https://img.shields.io/github/stars/prowler-cloud/prowler?style=social&color=white)](https://github.com/prowler-cloud/prowler/stargazers) |
@@ -119,3 +119,12 @@ If you find this CSPM repository useful for your cloud security architecture, re
 <p align="center">
   <b>Made for Cloud Security Architects, SOC Analysts, DevSecOps Engineers, &amp; Compliance Leads.</b>
 </p>
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Cloud-Security-Posture-Management-CSPM&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Cloud-Security-Posture-Management-CSPM_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Cloud-Security-Posture-Management-CSPM_growth.svg">
+  </picture>
+</a>
