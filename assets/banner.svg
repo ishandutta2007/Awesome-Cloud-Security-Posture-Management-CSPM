@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .title { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 42px; fill: #ffffff; }
+      .subtitle { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 20px; fill: #94a3b8; }
+      .badge-text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 14px; fill: #38bdf8; }
+
+      /* SVG Animations */
+      @keyframes floatNode1 {
+        0%, 100% { transform: translateY(0px) scale(1); opacity: 0.6; }
+        50% { transform: translateY(-12px) scale(1.08); opacity: 0.9; }
+      }
+      @keyframes floatNode2 {
+        0%, 100% { transform: translateY(0px) scale(1); opacity: 0.4; }
+        50% { transform: translateY(15px) scale(0.95); opacity: 0.8; }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.7; }
+      }
+      @keyframes scanline {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(300px); }
+      }
+
+      .node1 { animation: floatNode1 6s ease-in-out infinite; }
+      .node2 { animation: floatNode2 8s ease-in-out infinite; }
+      .pulse { animation: pulseGlow 4s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Background Grid Patterns & Glowing Blobs -->
+  <g class="pulse" opacity="0.4">
+    <circle cx="150" cy="80" r="140" fill="#3b82f6" filter="url(#glow)" />
+    <circle cx="1050" cy="220" r="160" fill="#8b5cf6" filter="url(#glow)" />
+  </g>
+
+  <!-- Decorative Circuit / Security Mesh Lines (Background layer) -->
+  <g stroke="#334155" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M 50 50 L 1150 50 M 50 150 L 1150 150 M 50 250 L 1150 250" stroke-dasharray="8 8" />
+    <path d="M 200 0 L 200 300 M 600 0 L 600 300 M 1000 0 L 1000 300" stroke-dasharray="8 8" />
+  </g>
+
+  <!-- Dynamic Glowing Graphic Elements (Right side graphic, positioned safely away from foreground text) -->
+  <g transform="translate(920, 150)">
+    <!-- Animated Outer Shield Rings -->
+    <circle class="node1" cx="0" cy="0" r="85" fill="none" stroke="url(#cyanGrad)" stroke-width="2" stroke-dasharray="12 6" opacity="0.6" />
+    <circle class="node2" cx="0" cy="0" r="65" fill="none" stroke="url(#purpleGrad)" stroke-width="2" stroke-dasharray="8 4" opacity="0.7" />
+
+    <!-- Central Security Shield Graphic -->
+    <path d="M 0 -45 L 35 -25 L 35 15 C 35 38 0 50 0 50 C 0 50 -35 38 -35 15 L -35 -25 Z" fill="url(#cyanGrad)" opacity="0.25" filter="url(#glow)" />
+    <path d="M 0 -40 L 30 -22 L 30 12 C 30 33 0 44 0 44 C 0 44 -30 33 -30 12 L -30 -22 Z" fill="none" stroke="#38bdf8" stroke-width="3" />
+    <!-- Checkmark inside Shield -->
+    <path d="M -12 2 L -3 11 L 14 -8" fill="none" stroke="#67e8f9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+
+    <!-- Orbiting Nodes -->
+    <circle class="node1" cx="-70" cy="-40" r="6" fill="#38bdf8" />
+    <line class="node1" x1="-70" y1="-40" x2="-30" y2="-22" stroke="#06b6d4" stroke-width="1.5" opacity="0.5" />
+    <circle class="node2" cx="75" cy="35" r="8" fill="#a855f7" />
+    <line class="node2" x1="75" y1="35" x2="30" y2="12" stroke="#a855f7" stroke-width="1.5" opacity="0.5" />
+  </g>
+
+  <!-- Left Header Content (Foreground Text - High Contrast & Safe Spacing) -->
+  <g transform="translate(70, 75)">
+    <!-- Pill Badge -->
+    <g transform="translate(0, 0)">
+      <rect width="280" height="32" rx="16" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" />
+      <text x="14" y="21" class="badge-text">🛡️ AWS • AZURE • GCP • K8S</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="82" class="title">Awesome Cloud Security Posture</text>
+    <text x="0" y="128" class="title" fill="url(#cyanGrad)">Management (CSPM)</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="168" class="subtitle">Curated SaaS Platforms, Enterprise CNAPP & Open-Source Security Tools</text>
+  </g>
+</svg>
